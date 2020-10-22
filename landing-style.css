@@ -2,11 +2,11 @@
     text-decoration:none;
     box-sizing: border-box;
 }
-a{
-	color:#666666;
-}
 a:hover{
-    text-decoration: underline; 
+    text-decoration: underline;
+}
+a{
+    color: #666666;
 }
 
 /* estilos del body  */
@@ -66,11 +66,11 @@ form input[type="submit"]{
 	width:40%; 
 	padding:8px 16px;
 	margin-top:28px;
-	border:1px solid #DE533A;
+	border:1px solid #0028DB;
 	border-radius:5px;
 	display:block;
 	color:#fff;
-	background-color:#DE533A;
+	background-color:#0028DB;
 } 
 
 form input[type="submit"]:hover{
@@ -85,6 +85,7 @@ form input[type="submit"]:hover{
 .container-flutter{
     display: grid; max-width: 100%; width: 100%; margin-left: 0; margin-right: 0;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    text-decoration: none; 
 }
 .microsyslabs{
     width: 18%; display: inline-block;
@@ -137,7 +138,13 @@ form input[type="submit"]:hover{
     background-color: blanchedalmond; border-radius: 100%;
 }
 
+/* modo responsivo */
+
+/* Modo phone */
 @media (max-width: 768px) {
+    .image > img{
+        width: 100%; opacity: 0.9; border-radius: 5%;
+    }
     .content > h1{
         text-align: center; top:-280px; position: relative; font-size: 1rem;
     }
@@ -145,34 +152,34 @@ form input[type="submit"]:hover{
         display: grid; width: 100%; position: relative; top:-70px;
     }
     form{
-        width:80%;
+        width:100%;
         padding:16px;
         border-radius:10px;
         margin:auto;
         background-color:#FF8A43;
-        opacity: 0.7; align-items: center;
+        opacity: 0.8; align-items: center;
     }
     form input[type="submit"]{
         width:40%; 
         padding:8px 16px;
         margin-top:28px;
-        border:1px solid #DE533A;
+        border:1px solid #0028DB;
         border-radius:5px;
         display:block;
         display: initial;
         color:#fff;
-        background-color:#DE533A;
+        background-color:#0028DB;
     }
     .container-flutter{
         display: grid; max-width: 100%; width: 100%; margin-left: 0; margin-right: 0;
         grid-template-columns: 90%;
-        text-decoration: none;
+        text-decoration: none; 
     }
     .microsyslabs{
         width: 80%; /* display: inline-block; */
     }
     .microsyslabs > img{
-        width: 95%;
+        width: 95%; padding: -9% 0 -9% 0; margin:-9% 0 -10% 0;
     }
     .adress-col{
         width: 80%; display: inline-block; text-align: center;
